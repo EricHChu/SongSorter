@@ -10,7 +10,7 @@ function sendSongs(csvSongs){
     document.getElementsByClassName("first")[0].style.height="100vh";
     document.getElementsByClassName("second")[0].style.height="100vh";
     console.log(csvSongs);
-    songs = csvSongs.split(",");
+    songs = csvSongs.split("|");
     for(let i = 0;i < songs.length;i++){
         songs[i].trim();
     }
