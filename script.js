@@ -36,12 +36,15 @@ function displaySorted(){
     document.getElementsByClassName("first")[0].style.display="none";
     document.getElementsByClassName("second")[0].style.display="none";
     document.getElementsByClassName("display")[0].style.display="flex";
-    document.getElementsByTagName('body')[0].style.overflow=visible;
+    document.getElementsByTagName('body')[0].style.overflow="visible";
     document.getElementsByTagName('body')[0].style.scroll="yes";
     var htmlList = document.getElementsByTagName("p")[0];
     var text = "";
     for(var i = 0; i < songs.length; i++){
-        text = text + (i+1) + ": " + songs[songs.length - i - 1] + " | ";
+        if(i != 0){
+            text = text + " | "
+        }
+        text = text + (i+1) + ": " + songs[songs.length - i - 1];
         if((i+1) %  5 == 0){
             text = text + "</br>";
         }
