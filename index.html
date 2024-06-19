@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <body>  
-        <h1>Hi</h1>
+    <head>
+        <title>Song Sorter</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body scroll="no" style="overflow:hidden">  
+        <div class = "songEntry">
+            <label for="songs">Songs:</label>
+            <input type="text" id ="songs" name="songs">
+            <button onclick="sendSongs(document.getElementById('songs').value)">Enter</button>
+        </div>
+        <div class = "first" onclick="returnChoice(false)">
+            <h1 id="textOne">Song 1</h1>
+        </div>
+        <div class = "second" onclick="returnChoice(true)">
+            <h1 id="textTwo">Song 2</h1>
+        </div>
+        <div class="display">
+            <p></p>
+        </div>
     </body>
 </html>

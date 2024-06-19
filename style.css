@@ -1,0 +1,70 @@
+*{
+    border: 0px solid red !important;
+    border:0;
+    margin:0;
+    padding:0;
+}
+
+body{
+    /*border:1px solid cyan;*/
+    margin:0;
+    padding:0;
+    background-color: cyan;
+}
+
+button{
+    background-color: darkblue;
+    color:white;
+    padding:5 !important;
+}
+
+.songEntry{
+    text-align: center;
+    font-family: Helvetica;
+    display:block;
+    background-color: lightyellow;
+}
+
+input{
+    border:0;
+}
+
+.first,.second{
+    height:98vh;
+    width:50vw;
+    font-family:Helvetica;
+    /*display:inline-block;*/
+}
+
+.first{
+    text-align: center;
+    background-color: lightblue;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /*height:100vh;
+    width:49.5vw;*/
+    float:left;
+}
+
+.second{
+    text-align: center;
+    background-color:lightpink;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /*height:100vh;
+    width:49.5vw;*/
+    float:right;
+}
+
+.display{
+    display:none;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+    font-family: Helvetia;
+    font-size:xx-large;
+    height:100vh;
+    width:100vw;
+}
